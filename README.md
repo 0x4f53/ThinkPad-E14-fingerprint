@@ -1,5 +1,5 @@
 [![Tag](https://img.shields.io/github/v/tag/4f77616973/ThinkPad-E14-fingerprint?label=Version&style=flat-square)](https://github.com/4f77616973/ThinkPad-E14-fingerprint/tags)
-[![License](https://img.shields.io/badge/License-GPLv2-purple?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/badge/License-LGPLv2.1-purple?style=flat-square)](LICENSE)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Yes-blue?style=flat-square)](https://opensource.org/)
 [![Maintenance](https://img.shields.io/badge/Maintained-Yes-success.svg?style=flat-square)](https://github.com/4f77616973/ThinkPad-E14-fingerprint/graphs/contributors)
 
@@ -55,4 +55,4 @@ Driver source files courtesy of [nmikhailov / Validity90](https://github.com/nmi
 Synaptics is a trademark of [Synaptics Incorporated](https://www.synaptics.com/).
 
 ## License
-This project is licensed under the GNU GPL v2.0. [Click here](LICENSE) for license.
+This project is licensed under the GNU Lesser GPL v2.1. [Click here](LICENSE) for license.
