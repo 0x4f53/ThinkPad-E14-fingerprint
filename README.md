@@ -1,6 +1,18 @@
-# Validity90
+[![Tag](https://img.shields.io/github/v/tag/4f77616973/goodix-drivers-linux?label=Version&style=flat-square)](https://github.com/4f77616973/goodix-drivers-linux/tags)
+[![License](https://img.shields.io/badge/License-GPLv2-purple?style=flat-square)](LICENSE)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-blue?style=flat-square)](https://opensource.org/)
+[![Maintenance](https://img.shields.io/badge/Maintained-Yes-success.svg?style=flat-square)](https://github.com/4f77616973/goodix-drivers-linux/graphs/contributors)
 
-This project aims on reverse engineering protocol of Validity 138a:0090, 138a:0094, 138a:0097, 06cb:0081, 06cb:009a fingerprint readers, creating specification and FLOSS libfprint driver.
+# Linux Fingerprint Drivers for ThinkPad E14
+<img src = "logo.png" alt = "fingerprint icon" width = "75dp">
+
+An attempt to port the Synaptics fingerprint driver to Linux for ThinkPad E14, E14 Gen 2, E15 and E15 Gen 2. Tested on Arch Linux with the latest LTS kernel.
+
+## Devices tageted
+- E14 (20RAxxxxxx, 20RBxxxxxx)
+- E14 Gen 2 (20T6xxxxxx, 20T7xxxxxx, 20TAxxxxxx, 20TBxxxxxx)
+- E15 (20RExxxxxx, 20RDxxxxxx)
+- E15 Gen 2 (20T8xxxxxx, 20T9xxxxxx, 20TDxxxxxx, 20TExxxxxx)
 
 ## Discussions
 
@@ -19,19 +31,13 @@ Lenovo forums: [https://forums.lenovo.com/t5/Linux-Discussion/Validity-Fingerpri
 
 ## Testing
 
-[Prototype](prototype) testers are needed, please share your result and join us in our [Gitter](https://gitter.im/Validity90/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
+[Prototype](prototype) testers are needed.
 
 ## Status
 
 |   Device  | Status |
 |-----------|--------|
-| 138a:0090 | Scan, Image output, Internal DB check works in prototype. There is also a match-on-host [libfprint driver](https://github.com/3v1n0/libfprint) by @3v1n0 based on prototype source(138a:0090 only). You can use it untill proper unified driver is available. |
-| 138a:0097 | Scan, Internal DB check works in prototype |
-| 138a:0094 | Doesn't work yet, but looks promising. I will try to work on it after 90/97 |
-| 06cb:0081 | So far looks identical to 138a:0094 |
-| 06cb:009a | Init works, leds work, scan doesn't work yet |
-| 138a:0091 | Different protocol, out of scope for this project. Check out [Validity91](https://github.com/hmaarrfk/Validity91) which aims to reverse engineer it.|
-
+| 06cb:00da | Work in progress |
 
 | 		      Task       			| Specification/Analysis  | Prototype   | Driver 	    |
 |---------------------------|-------------------------|-------------|-------------|
@@ -43,9 +49,12 @@ Lenovo forums: [https://forums.lenovo.com/t5/Linux-Discussion/Validity-Fingerpri
 | 97: Ops: enroll, check, reset, LED, etc| In progress  			      | Check works  | Not Started |
 | Image format  		        | In progress  			      | Done        | Not Started |
 
-## Donations
+```
 
-Please consider donating to support the development.  
-With paypal: [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nmikhailov/0usd)  
-With BTC: 1AsoCUGNVniBSBS359u2wKrA2CZiTgKZkM  
-With ETH: 0x005D8d9b5609b9A3Ec8B3cBd463a949405A8d621  
+## Credits
+Driver source files courtesy of [nmikhailov / Validity90](https://github.com/nmikhailov/Validity90) and [the Linux community](https://www.linux.org/).
+
+Synaptics is a trademark of [Synaptics Incorporated](https://www.synaptics.com/)
+
+## License
+This project is licensed under the GNU GPL v2.0. [Click here](LICENSE) for license.
