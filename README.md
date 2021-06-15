@@ -1,7 +1,7 @@
-[![Tag](https://img.shields.io/github/v/tag/4f77616973/goodix-drivers-linux?label=Version&style=flat-square)](https://github.com/4f77616973/goodix-drivers-linux/tags)
+[![Tag](https://img.shields.io/github/v/tag/4f77616973/ThinkPad-E14-fingerprint?label=Version&style=flat-square)](https://github.com/4f77616973/ThinkPad-E14-fingerprint/tags)
 [![License](https://img.shields.io/badge/License-GPLv2-purple?style=flat-square)](LICENSE)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Yes-blue?style=flat-square)](https://opensource.org/)
-[![Maintenance](https://img.shields.io/badge/Maintained-Yes-success.svg?style=flat-square)](https://github.com/4f77616973/goodix-drivers-linux/graphs/contributors)
+[![Maintenance](https://img.shields.io/badge/Maintained-Yes-success.svg?style=flat-square)](https://github.com/4f77616973/ThinkPad-E14-fingerprint/graphs/contributors)
 
 # Linux Fingerprint Drivers for ThinkPad E14
 <img src = "logo.png" alt = "fingerprint icon" width = "75dp">
@@ -41,20 +41,18 @@ Lenovo forums: [https://forums.lenovo.com/t5/Linux-Discussion/Validity-Fingerpri
 
 | 		      Task       			| Specification/Analysis  | Prototype   | Driver 	    |
 |---------------------------|-------------------------|-------------|-------------|
-| Initialization  		      | Done 					          | Done	 	    | Not Started |
-| Configuration/Reconfig    | In progress 	          | In progress | Not Started |
-| Pre TLS key exchange 	    | In progress 				    | Done        | Not Started |
-| TLS 			                | Done 						        | Done  	    | Not Started |
-| 90: Ops: scan, LED, etc| In progress  			      | Scan, LED works  | Not Started |
-| 97: Ops: enroll, check, reset, LED, etc| In progress  			      | Check works  | Not Started |
-| Image format  		        | In progress  			      | Done        | Not Started |
-
-```
+| Initialization  		      | Done 					          | Not Started	 	    | Not Started |
+| Configuration/Reconfig    | In progress 	          | Not Started | Not Started |
+| Pre TLS key exchange 	    | In progress 				    | Not Started        | Not Started |
+| TLS 			                | Done 						        | Not Started  	    | Not Started |
+| 90: Ops: scan, LED, etc| In progress  			      | Not Started  | Not Started |
+| 97: Ops: enroll, check, reset, LED, etc| In progress  			      | Not Started  | Not Started |
+| Image format  		        | In progress  			      | Not Started        | Not Started |
 
 ## Credits
 Driver source files courtesy of [nmikhailov / Validity90](https://github.com/nmikhailov/Validity90) and [the Linux community](https://www.linux.org/).
 
-Synaptics is a trademark of [Synaptics Incorporated](https://www.synaptics.com/)
+Synaptics is a trademark of [Synaptics Incorporated](https://www.synaptics.com/).
 
 ## License
 This project is licensed under the GNU GPL v2.0. [Click here](LICENSE) for license.
