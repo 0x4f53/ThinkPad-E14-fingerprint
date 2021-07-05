@@ -1,6 +1,6 @@
 CFLAGS = -c -Wall -g -DG_LOG_DOMAIN=\"Validity90\"
 LDFLAGS = 
- 
+
 SOURCES = validity90/utils.c validity90/validity90.c
 SOURCES_GTEST = test/rsp6-test.c test/utils-test.c
 
@@ -15,6 +15,8 @@ LIBS = nss openssl libusb-1.0 libpng glib-2.0
 
 CFLAGS += $(shell pkg-config --cflags $(LIBS))
 LDFLAGS += $(shell pkg-config --libs $(LIBS)) -lgcrypt
+
+ADDRESS := $(shell chmod +x findaddress.sh && ./findaddress.sh)
 
 all: $(EXECUTABLE)
  
@@ -46,10 +48,11 @@ test: test/gtest
 	gtester -k --verbose test/gtest
 
 permissions:
+	sudo chmod a+rwx $(ADDRESS)
 	sudo chmod a+r /sys/class/dmi/id/product_serial
-	lsusb -d 138a: | awk -F '[^0-9]+' '{ print "/dev/bus/usb/" $$2 "/" $$3 }' | xargs -r sudo chmod a+rw
-	lsusb -d 06cb:0081 | awk -F '[^0-9]+' '{ print "/dev/bus/usb/" $$2 "/" $$3 }' | xargs -r sudo chmod a+rw
-	lsusb -d 06cb:009a | awk -F '[^0-9]+' '{ print "/dev/bus/usb/" $$2 "/" $$3 }' | xargs -r sudo chmod a+rw
+	$(ADDRESS) | xargs -r sudo chmod a+rw
+	sudo chmod a+rwx $(ADDRESS)
+	sudo chmod a+r /sys/class/dmi/id/product_serial
 
 clean:
 	rm -f $(OBJECTS) $(OBJECTS_GTEST) $(EXECUTABLE) main.o test/gtest test/gtest.out.*
