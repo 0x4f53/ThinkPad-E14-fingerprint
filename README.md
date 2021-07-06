@@ -8,7 +8,7 @@
 
 An attempt to port the Synaptics fingerprint driver to Linux for ThinkPad E14, E14 Gen 2, E15 and E15 Gen 2. Tested on Arch Linux with the latest LTS kernel.
 
-## Devices tageted
+## Devices targeted
 - E14 (20RAxxxxxx, 20RBxxxxxx)
 - E14 Gen 2 (20T6xxxxxx, 20T7xxxxxx, 20TAxxxxxx, 20TBxxxxxx)
 - E15 (20RExxxxxx, 20RDxxxxxx)
