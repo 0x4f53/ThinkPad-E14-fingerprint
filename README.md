@@ -1,3 +1,13 @@
+### I have given away my ThinkPad E14. Work on this repository has permanently been terminated.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
 [![Tag](https://img.shields.io/github/v/tag/4f77616973/ThinkPad-E14-fingerprint?label=Version&style=flat-square)](https://github.com/4f77616973/ThinkPad-E14-fingerprint/tags)
 [![License](https://img.shields.io/badge/License-LGPLv2.1-purple?style=flat-square)](LICENSE)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Yes-blue?style=flat-square)](https://opensource.org/)
